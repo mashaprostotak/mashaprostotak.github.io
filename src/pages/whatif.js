@@ -15,10 +15,10 @@ const WhatIfPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div>
         <div className="navbar">
-          <a href='/'> home </a>
-          <a href="/research">research</a>
-          <a href="/projects">projects</a>
-          <a className="selected" href="/whatif">what if</a>
+          <Link to='/'> home </Link>
+          <Link to="/research">research</Link>
+          <Link to="/projects">projects</Link>
+          <Link className="selected" to="/whatif">what if</Link>
         </div>
         <h3> what if </h3>
         <div className="blog-entry">

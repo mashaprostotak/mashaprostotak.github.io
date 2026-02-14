@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import Layout from "../../components/layout"
 import css from "../index.css"
 import pluspunkteLogo from "../../images/pluspunkte2.png"
@@ -31,7 +31,7 @@ const projectsData = {
     functionality: "Connect with friends of friends seamlessly. Discover new connections in your extended network without needing introductions. You can type in a text prompt for who and where are you looking for and the app wil suggest you your 2nd degree connections to get in touch.",
     logo: handshakesLogo,
     screens: [
-      "/videos/demo.mov"
+      withPrefix("/videos/demo.mov")
     ]
   }
 }
@@ -53,10 +53,10 @@ const ProjectDetailPage = ({ params, pageContext, location }) => {
       <Layout location={location} title="">
         <div>
           <div className="navbar">
-            <a href='/'> home </a>
-            <a href="/research">research</a>
-            <a href="/projects">projects</a>
-            <a href="/whatif">parallel universe</a>
+            <Link to='/'> home </Link>
+            <Link to="/research">research</Link>
+            <Link to="/projects">projects</Link>
+            <Link to="/whatif">parallel universe</Link>
           </div>
           <h3>Project not found</h3>
           <Link to="/projects">← Back to projects</Link>

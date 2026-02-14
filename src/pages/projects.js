@@ -34,10 +34,10 @@ const ProjectsPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div>
         <div className="navbar">
-          <a href='/'> home </a>
-          <a href="/research">research</a>
-          <a className="selected" href="/projects">projects</a>
-          <a href="/whatif">parallel universe</a>
+          <Link to='/'> home </Link>
+          <Link to="/research">research</Link>
+          <Link className="selected" to="/projects">projects</Link>
+          <Link to="/whatif">parallel universe</Link>
         </div>
         <h3> projects </h3>
         <div className="projects-container">

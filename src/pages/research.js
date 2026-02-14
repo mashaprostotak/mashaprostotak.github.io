@@ -12,10 +12,10 @@ const ResearchPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div>
         <div className="navbar">
-          <a href='/'> home </a>
-          <a className="selected" href="/research">research</a>
-          <a href="/projects">projects</a>
-          <a href="/whatif">parallel universe</a>
+          <Link to='/'> home </Link>
+          <Link className="selected" to="/research">research</Link>
+          <Link to="/projects">projects</Link>
+          <Link to="/whatif">parallel universe</Link>
         </div>
         <h3> research </h3>
        

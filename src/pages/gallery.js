@@ -176,10 +176,10 @@ const GalleryPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div>
         <div className="navbar">
-          <a href='/'> home </a>
-          <a href="/research">research</a>
-          <a href="/projects">projects</a>
-          <a href="/whatif">what if</a>
+          <Link to='/'> home </Link>
+          <Link to="/research">research</Link>
+          <Link to="/projects">projects</Link>
+          <Link to="/whatif">what if</Link>
         </div>
         <h3> virtual gallery </h3>
         <div className="gallery-container">

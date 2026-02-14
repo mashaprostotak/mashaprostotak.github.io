@@ -12,10 +12,10 @@ const LandingPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div>
         <div className="navbar">
-          <a className="selected" href='/'> home </a>
-          <a href="/research">research</a>
-          <a href="/projects">projects</a>
-          <a href="/whatif">parallel universe</a>
+          <Link className="selected" to='/'> home </Link>
+          <Link to="/research">research</Link>
+          <Link to="/projects">projects</Link>
+          <Link to="/whatif">parallel universe</Link>
         </div>
         <div className="hero">
           <div className="profile-pic">
