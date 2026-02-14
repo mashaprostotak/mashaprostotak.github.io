@@ -46,6 +46,30 @@ function fixPathsInFile(filePath) {
     modified = true;
     return `${attr}="${pathPrefix}${url}"`;
   });
+  
+  // srcset and data-srcset attributes (for responsive images)
+  content = content.replace(/(srcset|data-srcset)=["']([^"']+)["']/g, (match, attr, srcsetValue) => {
+    // Split by comma and process each URL in the srcset
+    const fixedSrcset = srcsetValue.split(',').map(item => {
+      const parts = item.trim().split(/\s+/);
+      const url = parts[0];
+      const descriptor = parts.slice(1).join(' ');
+      
+      if (url.startsWith(pathPrefix) || url.startsWith('http') || url.startsWith('//') || url.startsWith('data:')) {
+        return item.trim();
+      }
+      if (url.startsWith('/')) {
+        modified = true;
+        return `${pathPrefix}${url}${descriptor ? ' ' + descriptor : ''}`;
+      }
+      return item.trim();
+    }).join(', ');
+    
+    if (modified) {
+      return `${attr}="${fixedSrcset}"`;
+    }
+    return match;
+  });
 
   if (modified) {
     fs.writeFileSync(filePath, content, 'utf8');
