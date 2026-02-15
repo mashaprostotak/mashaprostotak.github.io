@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import css from "./index.css"
 import pluspunkteLogo from "../images/pluspunkte2.png"
-import handshakesLogo from "../images/handshakes.png"
+import handshakesLogo from "../images/handshakes.webp"
 
 const ProjectsPage = ({ data, location }) => {
   const siteTitle = ''

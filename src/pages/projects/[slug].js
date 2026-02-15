@@ -8,7 +8,7 @@ import pluspunkteScreen2 from "../../images/pluspunkte_screen2.png"
 import pluspunkteScreen3 from "../../images/pluspunkte_screen3.png"
 import pluspunkteScreen4 from "../../images/pluspunkte_screen4.png"
 import pluspunkteScreen5 from "../../images/pluspunkte_screen5.png"
-import handshakesLogo from "../../images/handshakes.png"
+import handshakesLogo from "../../images/handshakes.webp"
 
 // Project data - in a real app, this could come from a CMS or markdown files
 const projectsData = {
