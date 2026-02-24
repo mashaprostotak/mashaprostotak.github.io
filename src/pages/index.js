@@ -48,18 +48,12 @@ const LandingPage = ({ data, location }) => {
             <div>
               <a href="mailto:emariia@ethz.ch">[email]</a>
               &emsp; <a href="https://github.com/mashaprostotak" target="_blank">[github]</a>
+              &emsp; <a href="https://www.linkedin.com/in/mariia-eremeeva/" target="_blank">[linkedin]</a>
             </div>
           </div>
         </div>
       </div>
-      {/* <div>
-        <h3> news </h3>
-        <ul>
-          <li className="news"><strong>[07/24]</strong> Attended ICML 2024 and presenting our position paper on dataset diversity.</li>
-          <li className="news"><strong>[10/23]</strong> Gave a talk at understanding biases in multimodal systems at the <a href="https://muws-workshop.github.io/">MUWS</a> workshop @ CIKM 2023.</li>
-          <li className="news"><strong>[10/23]</strong> Two papers accepted to NeurIPS D&B 2023.</li>
-         </ul>
-      </div> */}
+      {}
 
     </Layout>
   )
